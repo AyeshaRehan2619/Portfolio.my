@@ -220,8 +220,21 @@ button:hover {
 }
 
 /* Optional: Add some responsive styling */
-@media (max-width: 450px) {
-    .contact-container {
-        width: 90%; /* Occupy more width on smaller screens */
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    body {
+        width: 100%; /* Two items per row */
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5em; /* Smaller header font size */
+    }
+
+    nav {
+        width: 100%; /* One item per row */
+        margin: 10px 0; /* Add margin for spacing */
     }
 }
